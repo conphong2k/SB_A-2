@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>13과 인터넷 쇼핑은 싼 데다가 편해요</title>
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/animate.css">
+    <link rel="stylesheet" href="static/css/grid.css">
+    <link rel="stylesheet" href="static/css/font.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+<style>
+    table.type01
+    {
+        font-size:22px;
+        text-align:center;
+        vertical-align:middle;
+        border: 1px solid black;
+    }
+    table.type01 td
+    {
+        font-size:22px;
+        text-align:center;
+        vertical-align:middle;
+        border: 1px solid black;
+        padding-left:10px;
+        width:400px;
+        height:30px;
+    }
+</style>
+<div id="wrap">
+    <div id="header">
+        <div id="menu">
+            <img src="static/icons/icon_hamburger.png" alt="">
+        </div>
+        <div class="step-wrap">
+            <div class="step">13과</div>
+        </div>
+        <div class="title-wrap">
+            <div class="title">인터넷 쇼핑은 싼 데다가 편해요</div>
+        </div>
+        <div id="close">
+        </div>
+        <!-- navi -->
+        <div class="side-navi">
+            <a href="#" class="navi-home" onclick="oPage.moveIndex(1); return false;"></a>
+            <a href="#" class="navi-voca" onclick="oPage.moveIndex(2); return false;"></a>
+            <a href="#" class="navi-grammar" onclick="oPage.moveIndex(3); return false;"></a>
+            <a href="#" class="navi-grammar is-grammar-02" onclick="oPage.moveIndex(4); return false;"></a>
+            <a href="#" class="navi-speaking" onclick="oPage.moveIndex(5); return false;"></a>
+            <a href="#" class="navi-listening" onclick="oPage.moveIndex(7); return false;"></a>
+            <a href="#" class="navi-reading" onclick="oPage.moveIndex(8); return false;"></a>
+            <img src="static/images/navi_7.png" alt="">
+        </div>
+        <!--// navi -->
+    </div>
+    <div id="main">
+        <input type="hidden" id="page-index" value="1">
+        <input type="hidden" id="slide-index" value="1">
+        <audio id="audio"></audio>
+
+        <!-- 표지 -->
+        <div class="page" data-page-index="1">
+            <div class="page-content" style="height:680px;">
+                <div style="text-align: center"><img src="static/images/13_1_title.jpg" alt="" style="width: 70%" data-animage-grow-big></div>
+                <div data-animate-slide="1" style="width: 100%;">
+                    <div class="info-message">
+                        <p>어디에서 물건을 자주 사요?</p>
+                        <p>인터넷 쇼핑은 무엇이 좋아요?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 표지 -->
+        <!-- 어휘 -->
+        <div class="page" data-page-index="2">
+            <div class="page-header is-voca">
+                <div class="page-title">인터넷 쇼핑</div>
+            </div>
+            <div style="width: 100%;">
+                <div class="page-content is-narrow" style="text-align: center; position: relative; padding: 0; margin: 0 auto;width: 70%;">
+                    <img src="static/images/13_2_V_1_01.jpg" alt="" style="width: 100%;">
+
+                    <div class="div-map-point audio-button" data-audio-src="static/sounds/13-V-01.mp3" style="width: 32%; height: 8%;top: 23.5%;left: 2%;"></div><!-- 인터넷 쇼핑 -->
+                    <div class="div-map-point audio-button" data-audio-src="static/sounds/13-V-02.mp3" style="width: 32%;height: 6%;top: 5%;left: 43%;"></div><!-- 접속 -->
+                    <div class="div-map-point audio-button" data-audio-src="static/sounds/13-V-03.mp3" style="width: 24%;height: 6.5%;top: 18%;left: 42%;"></div><!-- 가입하다 -->
+                    <div class="div-map-point audio-button" data-audio-src="static/sounds/13-V-04.mp3" style="width: 23%;height: 7%;top: 31.5%;left: 42%;"></div><!-- 주문하다 -->
+                    <div class="div-map-point audio-button" data-audio-src="static/sounds/13-V-05.mp3" style="width: 24%;height: 6%;top: 24%;left: 74.7%;"></div><!--  운송장 -->
+                    <div class="div-map-point audio-button" data-audio-src="static/sounds/13-V-06.mp3" style="width: 24%;height: 6%;top: 32%;left:74.7%;"></div><!--  장바구니 담기 -->
+                    <div class="div-map-point audio-button" data-audio-src="static/sounds/13-V-07.mp3" style="width: 24%;height: 6%;top: 40%;left: 75%;"></div><!--  연락처 -->
+                    <div class="div-map-point audio-button" data-audio-src="static/sounds/13-V-08.mp3" style="width: 25%;height: 6%;top: 57%;left: 42%;"></div><!-- 결제하다 -->
+                    <div class="div-map-point audio-button" data-audio-src="static/sounds/13-V-09.mp3" style="width: 24%;height: 6%;top: 50%;left:74.7%;"></div><!--  일시불 -->
+                    <div class="div-map-point audio-button" data-audio-src="static/sounds/13-V-10.mp3" style="width: 24%;height: 6%;top: 58%;left:74.7%;"></div><!--  할부 -->
+                    <div class="div-map-point audio-button" data-audio-src="static/sounds/13-V-11.mp3" style="width: 24%;height: 7%;top: 65%;left:74.7%;"></div><!--  현금/카드 -->
+                    <div class="div-map-point audio-button" data-audio-src="static/sounds/13-V-12.mp3" style="width: 24%;height: 6%;top: 73%;left:74.7%;"></div><!--  주문내역 -->
+                    <div class="div-map-point audio-button" data-audio-src="static/sounds/13-V-13.mp3" style="width: 25%;height: 7%;top: 56.5%;left: 6%;"></div><!-- 배송하다 -->
+                    <div class="div-map-point audio-button" data-audio-src="static/sounds/13-V-14.mp3" style="width: 24%;height: 7%;top: 66%;left: 7%;"></div><!--  배송확인 -->
+                    <div class="div-map-point audio-button" data-audio-src="static/sounds/13-V-15.mp3" style="width: 24%;height: 6%;top: 74%;left: 7%;"></div><!--  반품하다 -->
+                    <div class="div-map-point audio-button" data-audio-src="static/sounds/13-V-16.mp3" style="width: 24%;height: 6%;top: 82%;left: 7%;"></div><!--  환불하다 -->
+                    <div class="div-map-point audio-button" data-audio-src="static/sounds/13-V-17.mp3" style="width: 24%;height: 7%;top: 89%;left: 7%;"></div><!--  교환하다 -->
+                </div>
+            </div>
+        </div>
+        <!--// 어휘 -->
+        <!-- 문법1 -->
+        <div class="page" data-page-index="3">
+            <div class="page-header is-grammar">
+                <div class="page-title">A-(으)ᄂ 데다가 / V- 는 데다가</div>
+            </div>
+            <div class="page-content">
+                <div class="row" style="position: absolute;width: 100%;top: 130px;">
+                    <div class="col-5 text-center">
+                        <img src="static/images/13_3_G_1_01.jpg" alt=""
+                             style="width: 300px;" data-animage-grow-big>
+                    </div>
+                    <div class="col-7">
+                        <div class="text sound-toggle-wrap" data-animate-slide="1">
+                            가 : 어디가 아프세요?<br>
+                            나 : 열이 나<span class="text-red">는 데다가</span> 기침도 심해요.
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/13-G1-1.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <!--<div data-animate-slide="2" data-slide-sound-src="static/sounds/1-7.mp3"></div>-->
+                        <div class="text sound-toggle-wrap" data-animate-slide="2">
+                            가 : 학교 앞 식당에 가 봤어요?<br>
+                            나 : 네. 거기는 가격이 비싼 <span class="text-red">데다가</span> 맛있어요.
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/13-G1-2.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <!--<div data-animate-slide="4" data-slide-sound-src="static/sounds/1-7.mp3"></div>-->
+                        <div class="text" style="margin-top: 60px;padding-left: 30px;" data-animate-slide="3">
+                            - 내일은 읽기 시험을 보<span class="text-red">는 데다가</span> 듣기 시험도 봐요.<br>
+                            - 손을 다<span class="text-red">친 데다가</span> 가방이 무거워서 힘들어요.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 문법1 -->
+        <!-- 문법2 -->
+        <div class="page" data-page-index="4">
+            <div class="page-header is-grammar">
+                <div class="page-title">A/V-기 때문에 / N 때문에</div>
+            </div>
+            <div class="page-content">
+                <div class="row" style="position: absolute;width: 100%;top: 130px;">
+                    <div class="col-5 text-center">
+                        <img src="static/images/13_3_G_2_01.jpg" alt=""
+                             style="width: 300px;" data-animage-grow-big>
+                    </div>
+                    <div class="col-7">
+                        <div class="text sound-toggle-wrap" data-animate-slide="1">
+                            가 : 왜 일찍 출발해요?<br>
+                            나 : 이 시간에는 길이 복잡하<span class="text-red">기 때문에</span> 일찍 출발해요.
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/13-G2-1.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="text sound-toggle-wrap" data-animate-slide="2">
+                            가 : 왜 학교에 늦었어요?<br>
+                            나 : 감기 <span class="text-red">때문에</span> 늦게 일어났어요.
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/13-G2-2.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="text" style="margin-top: 60px;padding-left: 30px;" data-animate-slide="3">
+                            - 비가 오<span class="text-red">기 때문에</span> 우산을 가지고 왔어요.<br>
+                            - 겨울은 춥<span class="text-red">기 때문에</span> 좋아하지 않아요.<br>
+                            - 어제 술을 많이 마<span class="text-red">셨기 때문에</span> 늦게 일어났어요.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 문법2 -->
+        <!-- 이야기해 봅시다 -->
+        <div class="page" data-page-index="5">
+            <div class="page-header is-speaking-practice"></div>
+            <div class="page-content">
+                <div class="row" style="position: absolute;width: 100%;">
+                    <div class="col-6 text-center">
+                        <img src="static/images/13_4_D_1_01_01.jpg" alt="" style="width: 230px;" data-animage-diminish-normal>
+                        <div style="display: inline-block;" data-animate-slide="1">
+                            <img src="static/images/13_4_D_1_01_02.jpg" alt="" style="width: 230px;"
+                                 data-animage-diminish-normal>
+                        </div>
+                        <div style="display: inline-block;" data-animate-slide="2">
+                            <img src="static/images/13_4_D_1_01_03.jpg" alt="" style="width: 230px;"
+                                 data-animage-diminish-normal>
+                        </div>
+                        <div style="display: inline-block;" data-animate-slide="3">
+                            <img src="static/images/13_4_D_1_01_04.jpg" alt="" style="width: 230px;"
+                                 data-animage-diminish-normal>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="article-wrap" data-animate-slide="4" style="height: 334px;margin: 9px 0;">
+                            <p class="article-text">
+                                왕 링: 요코 씨는 인터넷으로 쇼핑할 수 있어요?<br>
+                                요 코: 네, 저는 인터넷에서 자주 쇼핑을 해요.뭐 사고 싶은거 있어요?<br>
+                                왕 링: 다음 주에 제주도에 여행을 가는데 필요한 옷을 사 놓으려고요.<br>
+                                요 코: 그럼 이 쇼핑몰에서 사세요. 물건이 많은 데다가 값도 싸요.<br>
+                                왕 링: 그래요? 그런데 제가 카드가 없기 때문에 현금으로 사야 해요. 현금으로도 살 수 있어요?<br>
+                                요 코: 그럼요. 여기에 현금이라고 표시하고 배송지를 쓰면 돼요.<br>
+                                왕 링: 정말 편하네요. 그런데 물건이 마음에 안 들면 어떻게 해요?<br>
+                                요 코: 마음에 들지 않으면 교환이나 환불을 할 수 있어요.
+                            </p>
+                            <div class="audio-wrap">
+                                <audio src="static/sounds/13-D-1.mp3" controls></audio>
+                            </div>
+                            <div class="article-toggle-wrap">
+                                <a href="#" class="article-toggle-item is-show">
+                                    <img src="static/icons/icon_show_text.png" alt="">
+                                    <span>지문보기</span>
+                                </a>
+                                <a href="#" class="article-toggle-item is-hide">
+                                    <img src="static/icons/icon_hide_text.png" alt="">
+                                    <span>감추기</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 이야기해 봅시다 -->
+        <!-- 이야기해 봅시다2 -->
+        <div class="page" data-page-index="6">
+            <div class="page-header is-speaking-practice"></div>
+            <div class="page-content">
+                <div class="row is-yellow">
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="1">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        요코 씨/ <br>인터넷/ <br>쇼핑하다?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="3">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        다음 주/제주도/ <br>여행/가다/필요하다/ <br>옷/사/놓다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="5">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        그런데/카드/ <br>없다/현금/사다 <br>현금/사다/있다?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="7">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        정말/편리하다 <br>그런데/방/마음에 <br>안 들다/어떻다?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row is-green">
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="2">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        네, 저/인터넷/자주/ <br>쇼핑하다 <br>/사다/싶다?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="4">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        그럼/이/쇼핑/ <br>사다/물건/많다/ <br>값/싸다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="6">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        그럼/여기/현금/ <br>표시/배송지/ <br>쓰다/되다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="8">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        마음에 들지 않다/<br> 교환/환불하다/ <br>있다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 20px;border-top: 1px solid #9fa0a0;" data-animate-slide="9">
+                    <div class="row is-blue" style="margin-top: 20px;">
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="10">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            요코 씨/인터넷/ <br>호텔/예약하다?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="12">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            다음 주/제주도/ <br>여행/가다/호텔/ <br>예약하다/놓다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="14">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            그런데/현금/없다/ <br>카드/예약하다 <br>카드/예약하다/있다?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="16">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            정말/편리하다 <br>그런데/예약/바꾸다/ <br>싶다/어떻다?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row is-purple">
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="11">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            네, 저/인터넷/자주/ <br>예약하 <br>어디/가다/싶다?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="13">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            그럼/이/사이트/ <br>예약하다 <br>시설/좋/깨끗하다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="15">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            그럼/여기/카드/ <br>표시/이름/쓰다/ <br>되다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="17">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            예약/바꾸다/싶다/ <br>사이트/변경/취소/ <br>하다/있다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 이야기해 봅시다2 -->
+        <!-- 들어 보세요 -->
+        <div class="page" data-page-index="7">
+            <div class="page-header is-listening-practice"></div>
+            <div class="page-content is-narrow">
+                <div style="margin: 20px 30px">
+                <span style="font-size: 25px;">1. 다음을 읽고 물음에 답하세요.</span><br>
+				<div style="margin-top:20px;">
+                    <div style="margin-top: 30px;">
+                        <p style="font-size: 22px;">1) 왕링 씨는 방학에 어디에 갑니까?</p>
+                        <hr style="width: 30em; margin: 3em 0 0 1em">
+                    </div>
+
+                    <div style="margin-top: 30px;">
+                        <span style="font-size: 22px;">2) 다음을 듣고 맞는 것을 고르세요. </span><br><br>
+                        <p style="font-size: 20px;">
+                            ① 리신 씨는 제주도에 갈 것이다.<br>
+                            ② 리신 씨는 비행기 표를 예약하지 않았다.<br>
+                            ③ 왕링 씨는 여행사에서 비행기 표를 샀다.<br>
+                            ④ 비행기 표는 일주일 전에는 날짜를 바꿀 수 있다.
+                        </p>
+                    </div>
+                    <div style="margin-top: 80px;text-align: center">
+                        <audio src="static/sounds/13-L-01.mp3" controls></audio>
+                    </div>
+				</div>
+                </div>
+            </div>
+        </div>
+        <!--// 들어 보세요 -->
+        <!-- 읽고 써 보세요 -->
+        <div class="page" data-page-index="8">
+            <div class="page-header is-reading-talking"></div>
+            <div class="page-content is-narrow">
+                <span style="font-size: 25px;">1. 다음을 읽고 질문에 답하세요.</span>
+                <div class="box" style="margin-top: 30px;font-size:22px">
+                    <div style="text-align: center"><img src="static/images/13_6_RD_1_05.jpg" style="width: 30%"></div>
+                    <div>
+                        지난 주 토요일에 저는 인터넷에서 운동화를 샀습니다.<br>
+                        인터넷 쇼핑은 가격도 싸고 편리하기 때문에 인터넷에서 자주 쇼핑을 합니다.
+                        며칠 후 택배기사가 기숙사까지 운동화 를 배달해 주었습니다.
+                        저는 떨리는 마음으로 운동화를 신어 보았습니다.
+                        그런데 운동화가 발이 불편한 데다가 조금 작았습니다.
+                        그래서 저는 사이트에서 교환 신청 을 했습니다.
+                        다음 날 택배기사가 다시 기숙사로 왔습니다. 저는 운동화를 택배기사에게 주었습니다. 며칠 후 운동화가 왔습니다.
+                        이번에는 많이 불 편하지도 않고 사이즈도 딱 맞았습니다.
+                    </div>
+                </div>
+                <div data-animate-slide="1">
+                    <p style="font-size: 22px;margin-top: 20px;">1) 위 내용이 맞으면 O, 틀리면 X 하세요.</p>
+                    <div class="row" style="margin-top: 30px;">
+                        <div class="col-8">
+                            <p style="font-size: 20px">
+                                ① 운동화는 교환할 수 없다.<br>
+                                ② 인터넷 쇼핑은 편리하지만 비싸다.<br>
+                                ③ 교환을 하려면 직접 가게에 가야 한다.<br>
+                                ④ 인터넷 쇼핑은 직접 입어보고 신어 볼 수 있다.
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <div><span style="font-size: 20px">(</span><span style="margin-left: 40px;font-size: 20px;">)</span></div>
+                            <div><span style="font-size: 20px">(</span><span style="margin-left: 40px;font-size: 20px;">)</span></div>
+                            <div><span style="font-size: 20px">(</span><span style="margin-left: 40px;font-size: 20px;">)</span></div>
+                            <div><span style="font-size: 20px">(</span><span style="margin-left: 40px;font-size: 20px;">)</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 20px;" data-animate-slide="2">
+                    <span style="font-size: 22px;">2) 순서에 맞게 번호를 쓰십시오.</span>
+                    <div class="row is-narrow">
+                        <div class="col-2"><img src="static/images/13_6_RD_1_02.jpg"></div>
+                        <div class="col-2"><img src="static/images/13_6_RD_1_03.jpg"></div>
+                        <div class="col-2"><img src="static/images/13_6_RD_1_04.jpg"></div>
+                        <div class="col-2"><img src="static/images/13_6_RD_1_05.jpg"></div>
+                        <div class="col-2"><img src="static/images/13_6_RD_1_06.jpg"></div>
+                    </div>
+                    <div class="row" style ="width: 80%;">
+                        <table class="type01">
+                            <colgroup>
+                                <col width="20%"/>
+                                <col width="*"/>
+                            </colgroup>
+                            <tr>
+                                <td>①</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div style="margin-top: 20px;" data-animate-slide="3">
+                    <span style="font-size: 22px;">2. 여러분이 인터넷에서 산 물건을 환불/교환을 해 보세요.</span>
+                    <div class="row is-narrow">
+                        <div class="col-4"><img src="static/images/13_6_RD_1_07.png" style="width: 300px"></div>
+                        <div class="col-4" style="margin-left: 20%"><img src="static/images/13_6_RD_1_08.png" style="width: 300px"></div>
+                    </div>
+                    <div class="row" style ="width: 85%;">
+                        <table class="type01">
+                            <colgroup>
+                                <col width="30%"/>
+                                <col width="*"/>
+                            </colgroup>
+                            <tr>
+                                <td style="background-color: #fff1ba">물건 이름</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #fff1ba">환불/교환 이유</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #fff1ba">환불 방법</td>
+                                <td></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 읽고 써 보세요 -->
+    </div>
+    <div id="footer">
+        <div id="prev" style="display: none;">
+            <img src="static/icons/icon_prev.png">
+        </div>
+        <div id="next">
+            <img src="static/icons/icon_next.png">
+        </div>
+        <div class="book-name"><b>한국어교재1</b> Student's book A</div>
+        <div class="book-name-right"><b>13과. 인터넷 쇼핑은 싼 데다가 편해요</b></div>
+    </div>
+</div>
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/menu.js"></script>
+<script src="static/js/animate.js"></script>
+<script src="static/js/page.js"></script>
+<script src="static/js/script.js"></script>
+</body>
+</html>

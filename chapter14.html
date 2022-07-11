@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>14과 이메일로 숙제를 내세요</title>
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/animate.css">
+    <link rel="stylesheet" href="static/css/grid.css">
+    <link rel="stylesheet" href="static/css/font.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <style>
+      table {
+		font-size:22px;
+      }
+      table, th, td {
+        border: 1px solid #bcbcbc;
+		font-size:22px;
+		text-align:center;
+		vertical-align:middle;
+      }
+	  th{
+		width:200px;
+
+	  }
+    </style>
+<div id="wrap">
+    <div id="header">
+        <div id="menu">
+            <img src="static/icons/icon_hamburger.png" alt="">
+        </div>
+        <div class="step-wrap">
+            <div class="step">14과</div>
+        </div>
+        <div class="title-wrap">
+            <div class="title">이메일로 숙제를 내세요</div>
+        </div>
+        <div id="close">
+        </div>
+        <!-- navi -->
+        <div class="side-navi">
+            <a href="#" class="navi-home" onclick="oPage.moveIndex(1); return false;"></a>
+            <a href="#" class="navi-voca" onclick="oPage.moveIndex(2); return false;"></a>
+            <a href="#" class="navi-grammar" onclick="oPage.moveIndex(3); return false;"></a>
+            <a href="#" class="navi-grammar is-grammar-02" onclick="oPage.moveIndex(4); return false;"></a>
+            <a href="#" class="navi-speaking" onclick="oPage.moveIndex(5); return false;"></a>
+            <a href="#" class="navi-listening" onclick="oPage.moveIndex(7); return false;"></a>
+            <a href="#" class="navi-reading-talking" onclick="oPage.moveIndex(8); return false;"></a>
+            <img src="static/images/navi_7.png" alt="">
+        </div>
+        <!--// navi -->
+    </div>
+    <div id="main">
+        <input type="hidden" id="page-index" value="1">
+        <input type="hidden" id="slide-index" value="1">
+        <audio id="audio"></audio>
+
+        <!-- 표지 -->
+        <div class="page" data-page-index="1">
+            <div class="page-content">
+                <div data-animate-slide="1" class="l-left-bottom" style="width: 100%;">
+                    <div class="info-message">
+                        <p>여러분은 편지를 써 봤어요?</p>
+                        <p>여러분이 사용하는 SNS는 무엇이 있어요?</p>
+                        <p>여러분은 고향 친구와 어떻게 연락해요?</p>
+                    </div>
+                </div>
+                <div style="margin-left: -74px;position: absolute;top: 0;left: 35%;">
+                    <img src="static/images/14_1_title.jpg" alt="" style="max-width: 500px;height: 400px;"
+                         data-animage-grow-normal>
+                </div>
+            </div>
+        </div>
+        <!--// 표지 -->
+        <!-- 어휘 -->
+        <div class="page" data-page-index="2">
+            <div class="page-header is-voca">
+                <div class="page-title">이메일 / 메일 보내기</div>
+            </div>
+            <div class="page-content is-narrow">
+				<p style="font-size:25px">1. 이메일</p>
+                <div style="width: 100%;">
+                    <div class="page-content is-narrow" style="text-align: center; position: relative; padding: 0; margin: 0 auto;width: 70%;">
+                        <img src="static/images/14_2_V_1_01.jpg" alt="" style="width: 100%;">
+
+                        <div class="div-map-point audio-button" data-audio-src="static/sounds/14_V-01.mp3" style="width: 15%;height: 7%;top: 5%;left: 2%;"></div><!-- 메일쓰기-->
+                        <div class="div-map-point audio-button" data-audio-src="static/sounds/14_V-02.mp3" style="width: 15%;height: 7%;top: 18%;left: 2%;"></div><!-- 내게 쓰기-->
+                        <div class="div-map-point audio-button" data-audio-src="static/sounds/14_V-03.mp3" style="width: 15%;height: 7%;top: 28%;left: 2%;"></div><!-- 전체메일-->
+                        <div class="div-map-point audio-button" data-audio-src="static/sounds/14_V-04.mp3" style="width: 15%;height: 7%;top: 37%;left: 2%;"></div><!-- 받은 메일함-->
+                        <div class="div-map-point audio-button" data-audio-src="static/sounds/14_V-05.mp3" style="width: 15%;height: 7%;top: 47%;left: 2%;"></div><!-- 내게 쓴 메일함-->
+                        <div class="div-map-point audio-button" data-audio-src="static/sounds/14_V-06.mp3" style="width: 15%;height: 7%;top: 57%;left: 2%;"></div><!-- 임시보관함-->
+                        <div class="div-map-point audio-button" data-audio-src="static/sounds/14_V-07.mp3" style="width: 15%;height: 7%;top: 66%;left: 2%;"></div><!-- 받은메일함-->
+                        <div class="div-map-point audio-button" data-audio-src="static/sounds/14_V-08.mp3" style="width: 9%;height: 7%;top: 84%;left: 45%;"></div><!-- 읽음-->
+                        <div class="div-map-point audio-button" data-audio-src="static/sounds/14_V-09.mp3" style="width: 9%;height: 7%;top: 84%;left: 54%;"></div><!-- 삭제-->
+                        <div class="div-map-point audio-button" data-audio-src="static/sounds/14_V-10.mp3" style="width: 9%;height: 7%;top: 84%;left: 64%;"></div><!-- 답장-->
+                        <div class="div-map-point audio-button" data-audio-src="static/sounds/14_V-11.mp3" style="width: 9%;height: 7%;top: 84%;left: 74%;"></div><!-- 전달-->
+                    </div>
+                </div>
+				<p style="font-size:25px">2. 메일 보내기</p>
+                <div style="width: 100%;">
+                    <div class="page-content is-narrow" style="text-align: center; position: relative; padding: 0; margin: 0 auto;width: 70%;">
+                        <img src="static/images/14_2_V_1_02.jpg" alt="" st90e="width: 100%;">
+
+                        <div class="div-map-point audio-button" data-audio-src="static/sounds/14_V-12.mp3" style="width: 15%;height: 7%;top: 14%;left: 2%;"></div><!-- 보내기-->
+                        <div class="div-map-point audio-button" data-audio-src="static/sounds/14_V-13.mp3" style="width: 15%;height: 7%;top: 14%;left: 26%;"></div><!-- 미리보기-->
+                        <div class="div-map-point audio-button" data-audio-src="static/sounds/14_V-14.mp3" style="width: 15%;height: 7%;top: 14%;left: 44%;"></div><!-- 임시저장-->
+                        <div class="div-map-point audio-button" data-audio-src="static/sounds/14_V-15.mp3" style="width: 15%;height: 7%;top: 14%;left: 61%;"></div><!-- 내게쓰기-->
+                        <div class="div-map-point audio-button" data-audio-src="static/sounds/14_V-16.mp3" style="width: 15%;height: 7%;top: 14%;left: 82%;"></div><!-- 주소록-->
+                        <div class="div-map-point audio-button" data-audio-src="static/sounds/14_V-17.mp3" style="width: 15%;height: 7%;top: 42%;left: 1.5%;"></div><!-- 제목-->
+                        <div class="div-map-point audio-button" data-audio-src="static/sounds/14_V-18.mp3" style="width: 15%;height: 7%;top: 53%;left: 1.5%;"></div><!-- 파일첨부-->
+                        <div class="div-map-point audio-button" data-audio-src="static/sounds/14_V-19.mp3" style="width: 15%;height: 7%;top: 69%;left: 1.5%;"></div><!-- 내용-->
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+        <!--// 어휘 -->
+        <!-- 문법1 -->
+        <div class="page" data-page-index="3">
+            <div class="page-header is-grammar">
+                <div class="page-title">V-(으)ᄅ 줄 알다/모르다</div>
+            </div>
+            <div class="page-content">
+                <div class="row" style="position: absolute;width: 100%;top: 130px;">
+                    <div class="col-5 text-center">
+                        <img src="static/images/14_3_G_1_01.jpg" alt=""
+                             style="width: 300px;" data-animage-grow-big>
+                    </div>
+                    <div class="col-7">
+                        <div class="text sound-toggle-wrap" data-animate-slide="1">
+                            가 : 자동차를 운전<span class="text-red">할 줄 알아요?</span><br>
+                            나 : 아니요, 운전<span class="text-red">할 줄 몰라요</span>.
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/14_G1-1.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <!--<div data-animate-slide="2" data-slide-sound-src="static/sounds/1-7.mp3"></div>-->
+                        <div class="text sound-toggle-wrap" data-animate-slide="2">
+                            가 : 한자를 읽<span class="text-red">을 줄 알아요</span>?<br>
+                            나 : 네, 읽<span class="text-red">을 줄</span>은 <span class="text-red">아</span>는데 <span class="text-red">쓸 줄</span>은 <span class="text-red">몰</span>라요.
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/14_G1-2.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <!--<div data-animate-slide="4" data-slide-sound-src="static/sounds/1-7.mp3"></div>-->
+                        <div class="text" style="margin-top: 60px;padding-left: 30px;" data-animate-slide="3">
+                            - 저는 사진을 찍<span class="text-red">을 줄 알아요</span>.<br>
+                            - 한국어로 이메일을 보<span class="text-red">낼 줄 알아요</span>? <br>
+                            - 저는 비밤밥을 만<span class="text-red">들 줄 몰라요</span>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 문법1 -->
+        <!-- 문법2 -->
+        <div class="page" data-page-index="4">
+            <div class="page-header is-grammar">
+                <div class="page-title">N(으)로 (수단, 방법)</div>
+            </div>
+            <div class="page-content">
+                <div class="row" style="position: absolute;width: 100%;top: 130px;">
+                    <div class="col-5 text-center">
+                        <img src="static/images/14_3_G_2_01.jpg" alt="" style="width: 320px;" data-animage-grow-big>
+                        <!--<img src="static/images/14_3_G_2_02.jpg" alt="" style="width: 220px;" data-animage-grow-big>-->
+                    </div>
+                    <div class="col-7">
+                        <div class="text sound-toggle-wrap" data-animate-slide="1">
+                            가 : 한국 음식은 어떻게 먹어요?<br>
+                            나 : 숟가락과 젓가락<span class="text-red">으로</span> 먹어요.
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/14_G2-1.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="text sound-toggle-wrap" data-animate-slide="2">
+                            가 : 호텔을 예약했어요?<br>
+                            나 : 네. 인터넷<span class="text-red">으로</span> 예약했어요.
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/14_G2-2.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="text" style="margin-top: 60px;padding-left: 30px;" data-animate-slide="3">
+                            - 한국어 수업 시간에는 한국어<span class="text-red">로</span> 말해야 해요. <br>
+                            - 시험을 볼 때에는 볼펜<span class="text-red">으로</span> 쓰세요.<br>
+                            - 라면은 젓가락<span class="text-red">으로</span> 먹어야 해요.
+							
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 문법2 -->
+        <!-- 이야기해 봅시다 -->
+        <div class="page" data-page-index="5">
+            <div class="page-header is-speaking-practice"></div>
+            <div class="page-content">
+                <div class="row" style="position: absolute;width: 100%;">
+                    <div class="col-6 text-center">
+                        <img src="static/images/14_4_D_1_01_01.jpg" alt="" style="width: 240px;" data-animage-diminish-normal>
+                        <div style="display: inline-block;" data-animate-slide="1">
+                            <img src="static/images/14_4_D_1_01_02.jpg" alt="" style="width: 240px;"
+                                 data-animage-diminish-normal>
+                        </div>
+                        <div style="display: inline-block;" data-animate-slide="2">
+                            <img src="static/images/14_4_D_1_01_03.jpg" alt="" style="width: 240px;"
+                                 data-animage-diminish-normal>
+                        </div>
+                        <div style="display: inline-block;" data-animate-slide="3">
+                            <img src="static/images/14_4_D_1_01_04.jpg" alt="" style="width: 240px;"
+                                 data-animage-diminish-normal>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="article-wrap" data-animate-slide="4" style="height: 390px;margin: 9px 0;">
+                            <p class="article-text">
+                                제이미: 압둘라 씨, 한국어 쓰기 숙제 했어요?<br>
+                                압둘라: 네. 어제 저녁에 쓰기는 다 했어요. 제이미 씨는요?<br>
+                                제이미: 저도 다 해서 이메일로 보냈어요. 이번 숙제는 쓴 후에 다시 이메일로 선생님께 보내야 해서 쉽지 않았어요.<br>
+                                압둘라: 꼭 이메일로 보내야 해요? 저는 아직 컴퓨터로 한글 타자를 칠 줄 몰라서 이메일을 보내지 못 했어요.<br>
+                                제이미: 그래요? 선생님께 사정을 이야기하면 이해해 주실 거예요. 너무 걱정하지 마세요. 제가 한글 타자를 칠 줄 아니까 숙제를 도와줄게요.<br>
+                                압둘라: 네. 고마워요. 제이미 씨는 언제 한글 타자를 배웠어요?<br>
+                                제이미: 미국에서 한국 친구들과 이메일로 편지를 했어요. 그래서 한글 타자를 배웠어요.<br>
+                                압둘라: 저도 빨리 한글 키보드를 치는 방법을 배워야겠어요.
+                            </p>
+                            <div class="audio-wrap">
+                                <audio src="static/sounds/14_D-1.mp3" controls></audio>
+                            </div>
+                            <div class="article-toggle-wrap">
+                                <a href="#" class="article-toggle-item is-show">
+                                    <img src="static/icons/icon_show_text.png" alt="">
+                                    <span>지문보기</span>
+                                </a>
+                                <a href="#" class="article-toggle-item is-hide">
+                                    <img src="static/icons/icon_hide_text.png" alt="">
+                                    <span>감추기</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 이야기해 봅시다 -->
+        <!-- 이야기해 봅시다2 -->
+        <div class="page" data-page-index="6">
+            <div class="page-header is-speaking-practice"></div>
+            <div class="page-content">
+                <div class="row is-yellow">
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="1">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        압둘라 씨/ <br>한국어/쓰기 <br>숙제/다/하다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="3">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        저도/다/하다/ <br>이메일/보내다/이번/ <br>숙제/쓰다/후/다시/ <br>이메일/선생님께/ <br>보내다/쉽다/않다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="5">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        그래요?/선생님/사정/ <br>이야기하다/이해하다/ <br>주다/너무/걱정/말다/ <br>제/한글 타자/치다/ <br>알다/돕다/주다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="7">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        미국/한국/친구/ <br>이메일/편지/하다 <br>그래서/한글타자/ <br>배우다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row is-green">
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="2">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        네, 어제/저녁/ <br>쓰기/ 다/하다 <br>제이미 씨?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="4">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        꼭/이메일/보내다/하다? <br>저/아직/컴퓨터/타자/ <br>치다/모르다/이메일/ <br>보내다/못하다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="6">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        네, 고맙다 <br>제이미/언제/ <br>한글 타자/배우다?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="8">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        저도/빨리/ <br>한글 키보드/ <br>치다/방법/배우다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 20px;border-top: 1px solid #9fa0a0;" data-animate-slide="9">
+                    <div class="row is-blue" style="margin-top: 20px;">
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="10">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            리신 씨/ <br>한국문화 수업/ <br>신청서/다/쓰다?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="12">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            저도/신청서/다/ <br>쓰다/이메일로/ <br>접수하다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="14">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            그럼/제/대신/보내다/ <br>걱정하지말다/여기/ <br>수신/사무실/이메일/쓰다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="16">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            일본/한국/친구/ <br>이메일/편지/하다 <br>그래서/한글타자/배우다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row is-purple">
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="11">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            네, 오늘/아침/다/ <br>하다/한국어로/ <br>쓰다/힘들다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="13">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            꼭/이메일/보내다/ <br>하다?/직접/가다/ <br>접수하다/안 되다?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="15">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            네, 고맙다 <br>요코/언제/ <br>한글 타다/배우다?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="17">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            저도/빨리/배우다 <br>컴퓨터/사용하다/ <br>너무/어렵다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 이야기해 봅시다2 -->
+        <!-- 들어 보세요 -->
+        <div class="page" data-page-index="7">
+            <div class="page-header is-listening-practice"></div>
+            <div class="page-content is-narrow">
+                <div style="margin: 20px 30px">
+                <span style="font-size: 25px;">1. 잘 듣고 아래 문제를 풀어 보세요.</span><br>
+
+                    <div class="row" style="padding-left: 20%">
+                        <div class="col-4"><img src="static/images/14_5_L_1_01.jpg"></div>
+                        <div class="col-4"><img src="static/images/14_5_L_1_02.jpg"></div>
+                    </div>
+                    
+					<div style="margin-top:20px;">
+                    <span style="font-size: 22px;">1) 요코 씨는 무엇을 하려고 합니까? </span>
+					</div>
+                    
+                    <div style="padding-left: 1rem; padding-bottom:20px;">
+                        <div class="row">
+                            <div class="col-4">
+                                <p style="font-size: 20px;">① 커피숍에서 친구를 만나기</p>
+                            </div>
+                            <div class="col-4">
+                                <p style="font-size: 20px;">② 커피숍 예약하기</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <p style="font-size: 20px;">③ 커피숍에서 아르바이트 하기</p>
+                            </div>
+                            <div class="col-4">
+                                <p style="font-size: 20px;">④ 커피숍에서 공부하기</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span style="font-size: 22px;">2) 맞는 것을 고르세요. </span><br><br>
+                    <p style="font-size: 20px;padding-left: 1rem">
+                        ① 이력서는 인터넷으로 낼 수 없다.<br>
+                        ② 커피숍 일은 생각보다 어렵지 않다.<br>
+                        ③ 오전에만 아르바이트를 할 수 있다.<br>
+                        ④ 이력서를 보고 나서 전화를 할 것이다.
+                    </p>
+                    <div style="margin-top: 80px;text-align: center">
+                        <audio src="static/sounds/14_L-01.mp3" controls></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 들어 보세요 -->
+        <!-- 읽고 써 보세요 -->
+        <div class="page" data-page-index="8">
+            <div class="page-header is-reading-practice"></div>
+            <div class="page-content is-narrow">
+                <span style="font-size: 22px;">1. 다음을 읽고 질문에 답하세요.</span>
+                <div style="text-align: center"><img src="./static/images/14_8_RW_1_01.png"></div>
+                
+                <div class="" data-animate-slide="1">
+                    <div style="margin-top: 30px;">
+						<p style="font-size: 22px;margin-top: 20px;">1) 위 내용이 맞으면 O, 틀리면 X 하세요.</p>
+						<div class="row" style="margin-top: 30px;">
+							<div class="col-8">
+								<p style="font-size: 20px">
+                                    ① 요코 씨는 외식경영학과에 다니고 있다.<br>
+                                    ② 요코 씨는 아르바이트를 해 보지 않았다. <br>
+                                    ③ 오코 씨는 커피숍 아르바이트가 처음이다. <br>
+                                    ④ 요코 씨는 아이스크림 가게에서 일을 했다.
+								</p>
+							</div>
+							<div class="col-4">
+								<div><span style="font-size: 20px">(</span><span style="margin-left: 40px;font-size: 20px;">)</span></div>
+								<div><span style="font-size: 20px">(</span><span style="margin-left: 40px;font-size: 20px;">)</span></div>
+								<div><span style="font-size: 20px">(</span><span style="margin-left: 40px;font-size: 20px;">)</span></div>
+                                <div><span style="font-size: 20px">(</span><span style="margin-left: 40px;font-size: 20px;">)</span></div>
+							</div>
+						</div>
+                    </div>
+                </div>
+                <div style="margin-top: 20px;" data-animate-slide="2">
+                    <span style="font-size: 22px;">2. 여러분은 어떤 아르바이트를 하고 싶습니까? 여러분이 하고 싶은 아르바이트 에 대하여 써 보세요. </span>
+                    <div class="border-circle" style="width: 100%; height: 300px; border: 3px solid purple; background-color: rgba(0,0,0,0)">
+                        <p style="font-size: 1.2rem; padding: 30px 0 0 30px">
+                            1) 아르바이트 : <br><br>
+                            2) 시간 :<br><br>
+                            3) 학력 :<br><br>
+                            4) 경력 :<br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 읽고 써 보세요 -->
+    </div>
+    <div id="footer">
+        <div id="prev" style="display: none;">
+            <img src="static/icons/icon_prev.png">
+        </div>
+        <div id="next">
+            <img src="static/icons/icon_next.png">
+        </div>
+        <div class="book-name"><b>한국어교재1</b> Student's book A</div>
+        <div class="book-name-right"><b>14과. 이메일로 숙제를 내세요</b></div>
+    </div>
+</div>
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/menu.js"></script>
+<script src="static/js/animate.js"></script>
+<script src="static/js/page.js"></script>
+<script src="static/js/script.js"></script>
+</body>
+</html>

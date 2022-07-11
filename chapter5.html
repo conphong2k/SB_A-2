@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>5과 비싸도 가까운 곳에 살고 싶어요</title>
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/animate.css">
+    <link rel="stylesheet" href="static/css/grid.css">
+    <link rel="stylesheet" href="static/css/font.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <style>
+        .voca-block
+        {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .voca-table-block
+        {
+            width: 100%;
+            height: 60px;
+            border: 2px solid red;
+            margin-bottom: 30px;
+            text-align: center;
+            padding: 40px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="header">
+        <div id="menu">
+            <img src="static/icons/icon_hamburger.png" alt="">
+        </div>
+        <div class="step-wrap">
+            <div class="step">5과</div>
+        </div>
+        <div class="title-wrap">
+            <div class="title">비싸도 가까운 곳에 살고 싶어요</div>
+        </div>
+        <div id="close">
+        </div>
+        <!-- navi -->
+        <div class="side-navi">
+            <a href="#" class="navi-home" onclick="oPage.moveIndex(1); return false;"></a>
+            <a href="#" class="navi-voca" onclick="oPage.moveIndex(2); return false;"></a>
+            <a href="#" class="navi-grammar" onclick="oPage.moveIndex(3); return false;"></a>
+            <a href="#" class="navi-grammar is-grammar-02" onclick="oPage.moveIndex(4); return false;"></a>
+            <a href="#" class="navi-speaking" onclick="oPage.moveIndex(5); return false;"></a>
+            <a href="#" class="navi-listening" onclick="oPage.moveIndex(7); return false;"></a>
+            <a href="#" class="navi-reading-talking" onclick="oPage.moveIndex(8); return false;"></a>
+            <img src="static/images/navi_7.png" alt="">
+        </div>
+        <!--// navi -->
+    </div>
+    <div id="main">
+        <input type="hidden" id="page-index" value="1">
+        <input type="hidden" id="slide-index" value="1">
+        <audio id="audio"></audio>
+
+        <!-- 표지 -->
+        <div class="page" data-page-index="1">
+            <div class="page-content">
+                <div data-animate-slide="1" class="l-left-bottom" style="width: 100%;">
+                    <div class="info-message">
+                        <p>여기는 어디예요?</p>
+                        <p>여기에서 무엇을 해요?</p>
+                        <p>여러분은 어떤 집에서 살고 싶어요?</p>
+                    </div>
+                </div>
+                <div class="l-top-middle" style="margin-left: -200px;">
+                    <img src="static/images/05_1_title.jpg" alt="" style="max-width: 500px;height: 400px;"
+                         data-animage-grow-normal>
+                </div>
+            </div>
+        </div>
+        <!--// 표지 -->
+        <!-- 어휘 -->
+        <div class="page" data-page-index="2">
+            <div class="page-header is-voca">
+                <div class="page-title">집 / 기숙사</div>
+            </div>
+            <div class="page-content is-narrow">
+                <span style="font-size: 22px;">1. 집</span>
+                <div class="row">
+                    <div style="width: 10%;">
+                        <div class="div-color-block " style="height: 640px; width: 100%; background-color: #7eb9cc">
+                            <div class="text-white font-25" style="margin: 400% 0;">
+                                집
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9" style="margin-left: 50px">
+                        <div class="row">
+                            <div class="voca-table-block">
+                                <div class="div-button voca-block font-25 audio-button" data-audio-src="static/sounds/05-V-01.mp3">기숙사</div>
+                                <div class="div-button voca-block font-25 audio-button" data-audio-src="static/sounds/05-V-02.mp3">원룸</div>
+                                <div class="div-button voca-block font-25 audio-button" data-audio-src="static/sounds/05-V-03.mp3">투룸</div>
+                                <div class="div-button voca-block font-25 audio-button" data-audio-src="static/sounds/05-V-04.mp3">아파트</div>
+                                <div class="div-button voca-block font-25 audio-button" data-audio-src="static/sounds/05-V-05.mp3">단독주택</div>
+                                <div class="div-button voca-block font-25 audio-button" data-audio-src="static/sounds/05-V-06.mp3">빌라</div>
+                            </div>
+                            <div class="voca-table-block" style="border-color: rebeccapurple">
+                                <div class="div-button voca-block font-25 audio-button" data-audio-src="static/sounds/05-V-07.mp3">월세</div>
+                                <div class="div-button voca-block font-25 audio-button" data-audio-src="static/sounds/05-V-08.mp3">전세</div>
+                            </div>
+                            <div class="voca-table-block" style="border-color: #7eb9cc">
+                                <div class="div-button voca-block font-25 audio-button" data-audio-src="static/sounds/05-V-09.mp3">하숙</div>
+                                <div class="div-button voca-block font-25 audio-button" data-audio-src="static/sounds/05-V-10.mp3">자취</div>
+                            </div>
+                            <div class="voca-table-block" style="border-color: #cbcc27">
+                                <div class="div-button voca-block font-25 audio-button" data-audio-src="static/sounds/05-V-11.mp3">보증금</div>
+                                <div class="div-button voca-block font-25 audio-button" data-audio-src="static/sounds/05-V-12.mp3">계약금</div>
+                                <div class="div-button voca-block font-25 audio-button" data-audio-src="static/sounds/05-V-13.mp3">관리비</div>
+                                <div class="div-button voca-block font-25 audio-button" data-audio-src="static/sounds/05-V-14.mp3">생활비</div>
+                            </div>
+                            <div class="voca-table-block" style="border-color: darkorange">
+                                <div class="div-button voca-block font-25 audio-button" data-audio-src="static/sounds/05-V-15.mp3">집을 구하다</div>
+                                <div class="div-button voca-block font-25 audio-button" data-audio-src="static/sounds/05-V-16.mp3">방을 빼다</div>
+                                <div class="div-button voca-block font-25 audio-button" data-audio-src="static/sounds/05-V-17.mp3">계약하다</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-content is-narrow">
+                <span style="font-size: 22px;">2. 기숙사 신청</span>
+                <div class="row is-yellow" style="margin-top: 1em">
+                    <div class="col-3">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/05_2_V_1_01.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/05-V-18.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>가스요금</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/05_2_V_1_02.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/05-V-19.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>집세</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/05_2_V_1_03.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/05-V-20.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>수도요금</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/05_2_V_1_04.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/05-V-21.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>식비</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/05_2_V_1_05.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/05-V-22.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>전기요금</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/05_2_V_1_06.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/05-V-23.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>전화요금</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/05_2_V_1_07.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/05-V-19.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>집세</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/05_2_V_1_08.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/05-V-24.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>교통비</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--// 어휘 -->
+        <!-- 문법1 -->
+        <div class="page" data-page-index="3">
+            <div class="page-header is-grammar">
+                <div class="page-title">V-기(가) A</div>
+            </div>
+            <div class="page-content">
+                <div class="row" style="position: absolute;width: 100%;top: 130px;">
+                    <div class="col-5 text-center">
+                        <img src="static/images/05_3_G_1_01.jpg" alt=""
+                             style="height: 300px;" data-animage-grow-big>
+                    </div>
+                    <div class="col-7">
+                        <div class="text sound-toggle-wrap" data-animate-slide="1">
+                            가: 하숙집이 기숙사보다 좋아요?<br>
+                            나: 네, 아주머니께서 식사 준비를 해 주시니까 <span class="text-red">식사하기 편해요</span>.<br>
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/05-G1-1.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <!--<div data-animate-slide="2" data-slide-sound-src="static/sounds/1-7.mp3"></div>-->
+                        <div class="text sound-toggle-wrap" data-animate-slide="2">
+                            가: 하숙집이 기숙사보다 좋아요?<br>
+                            나: 아니요, 여러 사람이 같이 사니까 <span class="text-red">생활하기 불편해요</span>.
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/05-G1-2.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <!--<div data-animate-slide="4" data-slide-sound-src="static/sounds/1-7.mp3"></div>-->
+                        <div class="text" style="margin-top: 60px;padding-left: 30px;" data-animate-slide="3">
+                            - 침대가 딱딱해서 <span class="text-red">자기 불편해요</span>.<br>
+                            - 그 신발은 굽이 높아서 <span class="text-red">걷기 힘들어요</span>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 문법1 -->
+        <!-- 문법2 -->
+        <div class="page" data-page-index="4">
+            <div class="page-header is-grammar">
+                <div class="page-title">A/V-아/어도</div>
+            </div>
+            <div class="page-content">
+                <div class="row" style="position: absolute;width: 100%;top: 110px;">
+                    <div class="col-5 text-center">
+                        <img src="static/images/05_3_G_2_01.jpg" alt=""
+                             style="width: 300px;" data-animage-grow-big>
+                    </div>
+                    <div class="col-7">
+                        <div class="text sound-toggle-wrap" data-animate-slide="1">
+                            가: 도장이 있어야 통장을 만들 수 있어요?<br>
+                            나: 아니요. 도장이 <span class="text-red">없어도</span>만들 수 있어요.
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/05-G2-1.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="text sound-toggle-wrap" data-animate-slide="2">
+                            가: 비싸면 안 사실 거예요?<br>
+                            나: 아니요.<span class="text-red">비싸도 </span>살거예요.
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/05-G2-2.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="text" style="margin-top: 60px;padding-left: 30px;" data-animate-slide="3">
+                            - 날씨가 <span class="text-red">추워도 </span>여행을갈거예요.<br>
+                            - 기숙사에 <span class="text-red">살아도 </span>자주 지각을 해요.<br>
+                            - 뉴스는 계속 <span class="text-red">들어도 </span>이해할 수 없어요.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 문법2 -->
+        <!-- 이야기해 봅시다 -->
+        <div class="page" data-page-index="5">
+            <div class="page-header is-speaking-practice"></div>
+            <div class="page-content">
+                <div class="row" style="position: absolute;width: 100%;">
+                    <div class="col-6 text-center">
+                        <img src="static/images/05_4_D_1_01_01.jpg" alt="" style="width: 230px;" data-animage-diminish-normal>
+                        <div style="display: inline-block;" data-animate-slide="1">
+                            <img src="static/images/05_4_D_1_01_02.jpg" alt="" style="width: 230px;"
+                                 data-animage-diminish-normal>
+                        </div>
+                        <div style="display: inline-block;" data-animate-slide="2">
+                            <img src="static/images/05_4_D_1_01_03.jpg" alt="" style="width: 230px;"
+                                 data-animage-diminish-normal>
+                        </div>
+                        <div style="display: inline-block;" data-animate-slide="3">
+                            <img src="static/images/05_4_D_1_01_04.jpg" alt="" style="width: 230px;"
+                                 data-animage-diminish-normal>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="article-wrap" data-animate-slide="4" style="height: 334px;margin: 9px 0;">
+                            <p class="article-text">
+                                압둘라: 꾸엔 씨,요즘 왜 그렇게 바빠요?<br>
+                                꾸 엔: 학교 근처로 이사하고 싶어서 집을 찾고 있어요.<br>
+                                압둘라: 왜요? 지금 사는 곳이 생활하기 불편해요?<br>
+                                꾸 엔: 집 근처에 시장이 있어서 생활하기 편해요.
+                                그런데 학교에서 너무 멀어요.<br>
+                                압둘라: 그렇군요. 그런데 학교 근처는 많이 비쌀 거예요.<br>
+                                꾸 엔: 비싸도 가까운 곳에 살고 싶어요.학교 다니기가 너무 힘들어요.<br>
+                                압둘라: 요즘 새로 지은 원룸이 많으니까 구할 수 있을거예요.<br>
+                                꾸 엔: 네,오늘도 수업 후에 부동산에 가보려고 해요.
+                            </p>
+                            <div class="audio-wrap">
+                                <audio src="static/sounds/05-D-1.mp3" controls></audio>
+                            </div>
+                            <div class="article-toggle-wrap">
+                                <a href="#" class="article-toggle-item is-show">
+                                    <img src="static/icons/icon_show_text.png" alt="">
+                                    <span>지문보기</span>
+                                </a>
+                                <a href="#" class="article-toggle-item is-hide">
+                                    <img src="static/icons/icon_hide_text.png" alt="">
+                                    <span>감추기</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 이야기해 봅시다 -->
+        <!-- 이야기해 봅시다2 -->
+        <div class="page" data-page-index="6">
+            <div class="page-header is-speaking-practice"></div>
+            <div class="page-content">
+                <div class="row is-yellow">
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="1">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        꾸엔/ <br>
+                                        요즘/왜/그렇게/ <br>
+                                        바쁘다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="3">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        왜?/지금/살다/곳/ <br>
+                                        생활하다/ <br>
+                                        불편하다?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="5">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        그렇다 <br>
+                                        학교/근처/ <br>
+                                        비싸다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="7">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        새로/짓다/ <br>
+                                        원룸/ <br>
+                                        많다/구하다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row is-green">
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="2">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        학교/근처/ <br>
+                                        이사하다/ <br>
+                                        집/찾다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="4">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        집/근처/시장/있다/ <br>
+                                        생활하다/편하다 <br>
+                                        학교/너무/멀다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="6">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        비싸다/가깝다/살다/ <br>
+                                        학교/ <br>
+                                        다니다/힘들다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="8">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        네, 오늘/수업 후/ <br>
+                                        부동산/가다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 20px;border-top: 1px solid #9fa0a0;" data-animate-slide="9">
+                    <div class="row is-blue" style="margin-top: 20px;">
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="10">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            압둘라/ <br>
+                                            요즘/무슨 일/ <br>
+                                            있다?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="12">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            왜?/지금/살다/곳/ <br>
+                                            생활하다/ <br>
+                                            불편하다?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="14">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            그렇다 <br>
+                                            어떤/집/찾다?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="16">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            주변/공원/ <br>
+                                            있다/집/많다/구하다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row is-purple">
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="11">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            이사하다/ <br>
+                                            집/찾다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="13">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            지하철 역/ <br>
+                                            가깝다/교통/ <br>
+                                            편리하다/시끄럽다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="15">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            학교/멀다/ <br>
+                                            조용하다/시끄럽다/ <br>
+                                            살다/ 힘들다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="17">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            네, 오늘/수업 후/ <br>
+                                            부동산/가다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 이야기해 봅시다2 -->
+        <!-- 들어 보세요 -->
+        <div class="page" data-page-index="7">
+            <div class="page-header is-listening-practice"></div>
+            <div class="page-content is-narrow">
+                <div style="margin: 20px 30px">
+                    <div style="text-align: center;">
+                        <img src="static/images/05_5_L_1_01.jpg" style="height: 15em">
+                    </div>
+                    <span style="font-size: 25px;">1. 대화를 듣고 원룸 광고를 완성하세요.</span>
+
+                    <div style="text-align: center;">
+                        <img src="static/images/05_5_L_1_02.jpg" style="height: 15em; margin-top: 1em">
+                    </div>
+
+                    <div style="margin-top: 80px;text-align: center">
+                        <audio src="static/sounds/05-L-01.mp3" controls></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 들어 보세요 -->
+        <!-- 읽고 이야기해 보세요 -->
+        <div class="page" data-page-index="8">
+            <div class="page-header is-reading-talking"></div>
+            <div class="page-content is-narrow">
+                <span style="font-size: 22px;">1. 다음을 읽고 질문에 답하세요.</span>
+                <div style="text-align: center;">
+                    <img src="static/images/05_6_RD_1_01.jpg" style="height: 30em; margin-top: 1em">
+                </div>
+                <div class="" data-animate-slide="1">
+                    <div style="margin-top: 20px; margin-left: 2em">
+                        <span style="font-size: 22px;">1) 질문한 사람은 ‘집을 구할 때 주의사항’ 중에서 무엇을 지키지 않았어요?</span>
+                        <hr style="margin: 4em 0 0 2em">
+                    </div>
+                    <div style="margin-top: 20px; margin-left: 2em">
+                        <span style="font-size: 22px;">2) 내용과 <u>다른</u> 것을 고르세요..</span>
+                        <p style="font-size: 22px;margin-top: 10px; margin-left: 10px;">
+                            ① 월세의 계약 기간은 짧은 것이 좋다.<br>
+                            ② 집을 계약하기 전 꼭 가서 확인해야 한다.<br>
+                            ③ 광고에서는 장점과 단점을 모두 이야기한다.<br>
+                            ④ 다른 곳보다 많이 싼 방은 계약하지 않는 것이 좋다.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 20px;" data-animate-slide="2">
+                    <span style="font-size: 22px;">2. 여러분이 집을 구할 때 중요하게 생각하는 것은 무엇이에요? 중요한 것부터 순 서대로 써 보세요.
+                        그리고 ‘집을 구할 때 주의사항’도 써 보세요.
+                    </span>
+                    <div class="row is-yellow" style="margin-top: 1em">
+                        <div class="col-3">
+                            <div class="item-inner border-circle">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            방의 크기
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner border-circle">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            방의 가격
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner border-circle">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            주변 환경
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row is-yellow" style="margin-top: 1em">
+                        <div class="col-3">
+                            <div class="item-inner border-circle">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            교통
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="col-3">
+                        <div class="item-inner border-circle">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        시설
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="col-3">
+                        <div class="item-inner border-circle">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        집주인
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--// 읽고 이야기해 보세요 -->
+    </div>
+    <div id="footer">
+        <div id="prev" style="display: none;">
+            <img src="static/icons/icon_prev.png">
+        </div>
+        <div id="next">
+            <img src="static/icons/icon_next.png">
+        </div>
+        <div class="book-name"><b>한국어교재1</b> Student's book A</div>
+        <div class="book-name-right"><b>5과. 비싸도 가까운 곳에 살고 싶어요</b></div>
+    </div>
+</div>
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/menu.js"></script>
+<script src="static/js/animate.js"></script>
+<script src="static/js/page.js"></script>
+<script src="static/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>4과 기숙사 신청을 하자고 했어요</title>
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/animate.css">
+    <link rel="stylesheet" href="static/css/grid.css">
+    <link rel="stylesheet" href="static/css/font.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <style>
+        .border-circle-style {
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 50px;
+            width: 16.66%;
+            display: inline-block;
+            border: 3px solid grey;
+            border-radius: 15px;
+        }
+
+        .border-circle-row .border-circle-arrow {
+            height: 40px;
+            font-size: 20px;
+            line-height: 40px;
+            text-align: center;
+            width: 8.3%;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="header">
+        <div id="menu">
+            <img src="static/icons/icon_hamburger.png" alt="">
+        </div>
+        <div class="step-wrap">
+            <div class="step">4과</div>
+        </div>
+        <div class="title-wrap">
+            <div class="title">기숙사 신청을 하자고 했어요</div>
+        </div>
+        <div id="close">
+        </div>
+        <!-- navi -->
+        <div class="side-navi">
+            <a href="#" class="navi-home" onclick="oPage.moveIndex(1); return false;"></a>
+            <a href="#" class="navi-voca" onclick="oPage.moveIndex(2); return false;"></a>
+            <a href="#" class="navi-grammar" onclick="oPage.moveIndex(3); return false;"></a>
+            <a href="#" class="navi-grammar is-grammar-02" onclick="oPage.moveIndex(4); return false;"></a>
+            <a href="#" class="navi-grammar is-grammar-03" onclick="oPage.moveIndex(5); return false;"></a>
+            <a href="#" class="navi-speaking" onclick="oPage.moveIndex(6); return false;"></a>
+            <a href="#" class="navi-listening" onclick="oPage.moveIndex(8); return false;"></a>
+            <a href="#" class="navi-listening-02" onclick="oPage.moveIndex(9); return false;"></a>
+            <img src="static/images/navi_7.png" alt="">
+        </div>
+        <!--// navi -->
+    </div>
+    <div id="main">
+        <input type="hidden" id="page-index" value="1">
+        <input type="hidden" id="slide-index" value="1">
+        <audio id="audio"></audio>
+
+        <!-- 표지 -->
+        <div class="page" data-page-index="1">
+            <div class="page-content">
+                <div data-animate-slide="1" class="l-left-bottom" style="width: 100%;">
+                    <div class="info-message">
+                        <p>기숙사에 살아 봤어요?</p>
+                        <p>기숙사에는 무엇이 있어요?</p>
+                        <p>기숙사에 살고 싶으면 어떻게 해야 해요?</p>
+                    </div>
+                </div>
+                <div class="l-top-middle" style="margin-left: -250px;">
+                    <img src="static/images/04_1_title.jpg" alt="" style="max-width: 500px;height: 400px;"
+                         data-animage-grow-normal>
+                </div>
+            </div>
+        </div>
+        <!--// 표지 -->
+        <!-- 어휘 -->
+        <div class="page" data-page-index="2">
+            <div class="page-header is-voca">
+                <div class="page-title">기숙사</div>
+            </div>
+
+            <div class="page-content is-narrow">
+                <div class="row is-yellow">
+                    <div class="col-4">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/04_2_V_1_01.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/04-V-01.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>경비실</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/04_2_V_1_02.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/04-V-02.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>1인 1실</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/04_2_V_1_03.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/04-V-03.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>4인 1실</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/04_2_V_1_04.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/04-V-04.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>세탁실</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/04_2_V_1_05.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/04-V-05.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>조리실</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/04_2_V_1_06.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/04-V-06.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>샤워실</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/04_2_V_1_07.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/04-V-07.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>체력단련실</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/04_2_V_1_08.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/04-V-08.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>학생식당</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/04_2_V_1_09.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/04-V-09.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>휴게실</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/04_2_V_1_10.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/04-V-10.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>우편함</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/04_2_V_1_11.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/04-V-11.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>택배보관함</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/04_2_V_1_12.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/04-V-12.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>식수대</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-content is-narrow">
+                <h1 class="page-subtitle">2. 기숙사 신청</h1>
+                <div class="border-circle-row" style="">
+                    <div class="border-circle-style" style="margin-left: 8%">
+                        <div class="div-button font-25 audio-button" data-audio-src="static/sounds/04-V-13.mp3">신청서 쓰기</div>
+                    </div>
+                    <div class="border-circle-arrow" style="font-size: 20px;">
+                        <i class="fa fa-arrow-right" style="font-size: 20px;"></i>
+                    </div>
+                    <div class="border-circle-style">
+                        <div class="div-button font-25 audio-button" data-audio-src="static/sounds/04-V-14.mp3">신청하기</div>
+                    </div>
+                    <div class="border-circle-arrow" style="font-size: 20px;">
+                        <i class="fa fa-arrow-right" style="font-size: 20px;"></i>
+                    </div>
+                    <div class="border-circle-style bg-light-gray">
+                        <div class="div-button font-25 audio-button" data-audio-src="static/sounds/04-V-15.mp3">입사</div>
+                    </div>
+                </div>
+                <div class="border-circle-row" style="margin-top: 10px;">
+                    <div class="border-circle-style bg-light-gray" style="margin-left: 61%">
+                        <div class="div-button font-25 audio-button" data-audio-src="static/sounds/04-V-16.mp3">퇴사</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 어휘 -->
+        <!-- 문법1 -->
+        <div class="page" data-page-index="3">
+            <div class="page-header is-grammar">
+                <div class="page-title">A-(으)ᄂ지/V-는지 알다/모르다</div>
+            </div>
+            <div class="page-content">
+                <div class="row" style="position: absolute;width: 100%;top: 130px;">
+                    <div class="col-5 text-center">
+                        <img src="static/images/04_3_G_1_01.jpg" alt=""
+                             style="height: 300px;" data-animage-grow-big>
+                    </div>
+                    <div class="col-7">
+                        <div class="text sound-toggle-wrap" data-animate-slide="1">
+                            가: 어린이대공원에 어떻게 <span class="text-red">가는지 알아요</span>?<br>
+                            나: 네, 7호선을 타고 가면 돼요.<br>
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/04-G1-1.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button"
+                                   aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <!--<div data-animate-slide="2" data-slide-sound-src="static/sounds/1-7.mp3"></div>-->
+                        <div class="text sound-toggle-wrap" data-animate-slide="2">
+                            가: 어린이대공원에 어떻게 <span class="text-red">가는지 알아요</span>?<br>
+                            나: 아니요, 어떻게 <span class="text-red">가는지 몰라요</span>.
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/04-G1-2.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button"
+                                   aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <!--<div data-animate-slide="4" data-slide-sound-src="static/sounds/1-7.mp3"></div>-->
+                        <div class="text" style="margin-top: 60px;padding-left: 30px;" data-animate-slide="3">
+                            - 그 음식을 어떻게 <span class="text-red">먹는지 알아요</span>?<br>
+                            - 가연 씨가 어디에 <span class="text-red">사는지 몰라요</span>.<br>
+                            - 러시아가 얼마나 <span class="text-red">추운지 알아요</span>?<br>
+                            - 한옥마을이 어디에 <span class="text-red">있는지 모릅니다</span>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 문법1 -->
+        <!-- 문법2 -->
+        <div class="page" data-page-index="4">
+            <div class="page-header is-grammar">
+                <div class="page-title">V-(으)라고 하다</div>
+            </div>
+            <div class="page-content">
+                <div class="row" style="position: absolute;width: 100%;top: 110px;">
+                    <div class="col-5 text-center">
+                        <img src="static/images/04_3_G_2_01.jpg" alt=""
+                             style="width: 300px;" data-animage-grow-big>
+                    </div>
+                    <div class="col-7">
+                        <div class="text sound-toggle-wrap" data-animate-slide="1">
+                            가 : 선생님께서 뭐라고 하셨어요?<br>
+                            나 : <span class="text-red">친구와 한국어로 이야기하라고 하셨어요</span>.
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/04-G2-1.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button"
+                                   aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <!--<div data-animate-slide="2" data-slide-sound-src="static/sounds/1-7.mp3"></div>-->
+                        <div class="text sound-toggle-wrap" data-animate-slide="2">
+                            가 : 선생님께서 뭐라고 하셨어요?<br>
+                            나 : <span class="text-red">영어로 이야기하지 말라고 하셨어요</span>.
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/04-G2-2.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button"
+                                   aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <!--<div data-animate-slide="4" data-slide-sound-src="static/sounds/1-7.mp3"></div>-->
+                        <div class="text" style="margin-top: 60px;padding-left: 30px;" data-animate-slide="3">
+                            - 의사 선생님께서 밥을 먹고 약을 <span class="text-red">먹으라고 하셨어요</span>. <br>
+                            - 어머니께서 저에게 기숙사에서 <span class="text-red">살라고 하셨어요</span>.<br>
+                            - 듣기를 잘 하고 싶으면 뉴스를 <span class="text-red">들으라고 했어요</span>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 문법2 -->
+        <!-- 문법3 -->
+        <div class="page" data-page-index="5">
+            <div class="page-header is-grammar">
+                <div class="page-title">V-자고 하다</div>
+            </div>
+            <div class="page-content">
+                <div class="row" style="position: absolute;width: 100%;top: 110px;">
+                    <div class="col-5 text-center">
+                        <img src="static/images/04_3_G_3_01.jpg" alt=""
+                             style="width: 300px;" data-animage-grow-big>
+                    </div>
+                    <div class="col-7">
+                        <div class="text sound-toggle-wrap" data-animate-slide="1">
+                            친구들이 같이 <span class="text-red">여행을 가자고 합니다</span>.<br>
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/04-G3-1.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button"
+                                   aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="text sound-toggle-wrap" data-animate-slide="2">
+                            친구가 저녁에 <span class="text-red">삼겹살을 먹자고 합니다</span>.<br>
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/04-G3-2.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button"
+                                   aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="text sound-toggle-wrap" data-animate-slide="3">
+                            친구가 눈이 오니까 <span class="text-red">나가지 말자고 합니다</span>.
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/04-G3-3.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button"
+                                   aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="text sound-toggle-wrap" data-animate-slide="4">
+                            도서관에 가서 <span class="text-red">공부하자고 합니다</span>.<br>
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/04-G3-4.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button"
+                                   aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="text sound-toggle-wrap" data-animate-slide="5">
+                            가까우니까 같이 <span class="text-red">걷자고 합니다</span>.<br>
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/04-G3-5.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button"
+                                   aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="text sound-toggle-wrap" data-animate-slide="6">
+                            올해는 야유회를 <span class="text-red">가지 말자고 합니다</span>.
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/04-G3-6.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button"
+                                   aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 문법3 -->
+        <!-- 이야기해 봅시다 -->
+        <div class="page" data-page-index="6">
+            <div class="page-header is-speaking-practice"></div>
+            <div class="page-content">
+                <div class="row" style="position: absolute;width: 100%;">
+                    <div class="col-6 text-center">
+                        <img src="static/images/04_4_D_1_01_01.jpg" alt="" style="width: 230px;" data-animage-diminish-normal>
+                        <div style="display: inline-block;" data-animate-slide="1">
+                            <img src="static/images/04_4_D_1_01_02.jpg" alt="" style="width: 230px;"
+                                 data-animage-diminish-normal>
+                        </div>
+                        <div style="display: inline-block;" data-animate-slide="2">
+                            <img src="static/images/04_4_D_1_01_03.jpg" alt="" style="width: 230px;"
+                                 data-animage-diminish-normal>
+                        </div>
+                        <div style="display: inline-block;" data-animate-slide="3">
+                            <img src="static/images/04_4_D_1_01_04.jpg" alt="" style="width: 230px;"
+                                 data-animage-diminish-normal>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="article-wrap" data-animate-slide="4" style="height: 334px;margin: 9px 0;">
+                            <p class="article-text">
+                                요 코 : 압둘라씨!<br>
+                                압둘라 : 어, 요코 씨. 점심 먹었어요?<br>
+                                요 코 : 네, 먹었어요. 압둘라 씨는요?<br>
+                                압둘라 : 아직 안 먹었어요. 기숙사 신청하고 먹으려고요.<br>
+                                요 코 : 기숙사에 들어가려고요?<br>
+                                압둘라 : 네,로빈씨가 같이 기숙사에 들어가자고 해서 이번 학기는 기숙사에 살아 보려고 해요.<br>
+                                요 코 : 그럼, 빨리 사무실에 가서 신청하세요. 선생님께서 기숙사를 신청하고 싶 으면 오늘 오후 3시까지 사무실로 가라고 하셨어요.<br>
+                                압둘라 : 아, 그래요? 빨리 가서 해야겠어요. 고마워요.
+                            </p>
+                            <div class="audio-wrap">
+                                <audio src="static/sounds/04-D-1.mp3" controls style="height: 4em"></audio>
+                            </div>
+                            <div class="article-toggle-wrap">
+                                <a href="#" class="article-toggle-item is-show">
+                                    <img src="static/icons/icon_show_text.png" alt="">
+                                    <span>지문보기</span>
+                                </a>
+                                <a href="#" class="article-toggle-item is-hide">
+                                    <img src="static/icons/icon_hide_text.png" alt="">
+                                    <span>감추기</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 이야기해 봅시다 -->
+        <!-- 이야기해 봅시다2 -->
+        <div class="page" data-page-index="7">
+            <div class="page-header is-speaking-practice"></div>
+            <div class="page-content">
+                <div class="row is-yellow">
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="1">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">압둘라 씨!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="3">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        네, 먹다 <br>
+                                        압둘라 씨?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="5">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        기숙사/들어가다?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="7">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        빨리/사무실/가다/기숙사/ <br>
+                                        신청하다/선생님:오후/ <br>
+                                        3시/사무실/가다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row is-green">
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="2">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        요코씨 <br>
+                                        점심/먹다?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="4">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        아직/안/먹다 <br>
+                                        기숙사/신청하다/ <br>
+                                        먹다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="6">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        로빈:기숙사/ <br>
+                                        들어가다/이번/ <br>
+                                        기숙사/살다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="8">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        아, 그래요? <br>
+                                        빨리/가다/하다 <br>
+                                        고맙다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 20px;border-top: 1px solid #9fa0a0;" data-animate-slide="9">
+                    <div class="row is-blue" style="margin-top: 20px;">
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="10">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            요코 씨!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="12">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            아니요, 안/ <br>
+                                            먹다/기숙사/ <br>
+                                            신청하다/먹다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="14">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            네, 혹시/기숙사/ <br>
+                                            신청/어떻게/ <br>
+                                            하다/ 알다?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="16">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            아, 그래요? <br>
+                                            고맙다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row is-purple">
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="11">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            압둘라 씨 <br>
+                                            점심/먹다?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="13">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            기숙사/살다?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="15">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            기숙사/ <br>
+                                            홈페이지/ <br>
+                                            신청하다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="17">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            오늘/오후/3시/ <br>
+                                            빨리/하다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 이야기해 봅시다2 -->
+        <!-- 들어 보세요 -->
+        <div class="page" data-page-index="8">
+            <div class="page-header is-listening-practice"></div>
+            <div class="page-content is-narrow">
+                <div style="margin: 20px 30px">
+                    <div style="text-align: center"><img src="static/images/04_5_L_1_01.jpg" alt="" style="width: 300px; text-align: center" data-animage-grow-normal><br></div>
+                    <span style="font-size: 22px;">1. 지금 기숙사에 사는 사람은 누구입니까?</span>
+                    <p style="font-size: 22px;margin-top: 10px; margin-left: 10px;line-height: 40px;">
+                        ① 로빈
+                        <span style="margin-left: 3em">② 압둘라</span>
+                        <span style="margin-left: 3em">③ 요코</span>
+                    </p>
+
+                    <div style="margin-top: 30px;">
+                        <p style="font-size: 22px;">2. 들은 내용과 <u>다른</u> 것을 고르십시오.</p>
+                        <p style="font-size: 22px;margin-top: 10px; margin-left: 10px;line-height: 40px;">
+                            ① 남자는 이번 학기부터 기숙사에 산다.<br>
+                            ② 여자는 남자가 기숙사에 사는지 몰랐다.<br>
+                            ③ 기숙사의 장점은 좀 더 잘 수 있는 것이다.<br>
+                            ④ 기숙사의 단점은 규칙을 지켜야 하는 것이다.
+                        </p>
+                    </div>
+
+                    <div style="margin-top: 80px;text-align: center">
+                        <audio src="static/sounds/04-L-01.mp3" controls style="height: 4em"></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 들어 보세요 -->
+        <!-- 들어 보세요2 -->
+        <div class="page" data-page-index="9">
+            <div class="page-header is-listening-practice"></div>
+            <div class="page-content is-narrow">
+                <span style="font-size: 22px;">3. 다음을 읽고 질문에 답하세요.</span>
+                <div class="box" style="margin-top: 30px;">
+                    <div class="row">
+                        <div class="col-6">
+                            <p>
+                            <div style="margin-top: 1em"><span class="text-red">□ 출입안내</span></div>
+                                <div style="margin-left: 1em">
+                                    •기숙사에 24시까지 들어와야 합니다.<br>
+                                    •오전 5시 전에는 기숙사에서 나갈 수 없습니다.<br>
+                                    •기숙사를 출입할 때는 카드키를 항상 가지고 있어야 합니다.
+                                </div>
+                            <div style="margin-top: 1em"><span class="text-red" >□ 손님방문</span></div>
+                                <div style="margin-left: 1em">
+                                    •손님은 기숙사생과 함께 사무실을 방문해야 합니다.<br>
+                                    •방문시간은 오전 10시부터 오후 5시까지입니다.
+                                </div>
+                            <div style="margin-top: 1em"><span class="text-red">□ 휴게실</span></div>
+                                <div style="margin-left: 1em">
+                                •이용시간: 07:00 ~ 20:00<br>
+                                •간단한 요리 가능, 사용 후 반드시 정리
+                                </div>
+                            <div style="margin-top: 1em"><span class="text-red">□ 세탁실</span></div>
+                                <div style="margin-left: 1em">
+                                    •이용시간 : 05:00 ~ 24:00<br>
+                                    •세탁시간은 약 30분~50분<br>
+                                    •1,000원짜리 지폐만 사용 가능
+                                </div>
+
+                            </p>
+                        </div>
+                        <div class="col-6" style="text-align: center;">
+                            <img src="static/images/04_6_RD_1_01.jpg" alt="" style="width: 150px">
+                        </div>
+                        <div class="col-6" style="text-align: center;">
+                            <img src="static/images/04_6_RD_1_02.jpg" alt="" style="width: 150px">
+                        </div>
+                        <div class="col-6" style="text-align: center;">
+                            <img src="static/images/04_6_RD_1_02.jpg" alt="" style="width: 150px">
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 20px; margin-left: 2em">
+                    <span style="font-size: 22px;">1) 글의 제목으로 가장 알맞은 것을 고르세요.</span>
+                    <p style="font-size: 22px;margin-top: 10px; margin-left: 10px;">
+                        ① 입사신청
+                        <span style="margin-left: 1em">② 생활안내</span>
+                        <span style="margin-left: 1em">③ 고장신고</span>
+                        <span style="margin-left: 1em">④ 기숙사소개</span>
+                    </p>
+                </div>
+                <div style="margin-top: 20px; margin-left: 2em">
+                    <span style="font-size: 22px;">2) 내용과 <u>다른</u> 것을 고르세요..</span>
+                    <p style="font-size: 22px;margin-top: 10px; margin-left: 10px;">
+                        ① 세탁을 하려면 돈이 필요합니다.<br>
+                        ② 기숙사는 항상 출입할 수 있습니다.<br>
+                        ③ 기숙사에서 간단한 요리를 할 수 있습니다.<br>
+                        ④ 손님은 17시까지 기숙사에 있을 수 있습니다.
+                    </p>
+                </div>
+
+                <div class="" data-animate-slide="1">
+                    <p style="font-size: 22px;margin-top: 50px;">4. 글의 내용으로 대화를 만들어 보세요.</p>
+                    <div class="row" style="margin-top: 20px;">
+                        <img src="static/images/04_6_RD_1_04.jpg" alt="" style="width: 450px ;margin-left: 5em">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--// 읽고 써 보세요 -->
+    </div>
+    <div id="footer">
+        <div id="prev" style="display: none;">
+            <img src="static/icons/icon_prev.png">
+        </div>
+        <div id="next">
+            <img src="static/icons/icon_next.png">
+        </div>
+        <div class="book-name"><b>한국어교재1</b> Student's book A</div>
+        <div class="book-name-right"><b>4과. 기숙사 신청을 하자고 했어요</b></div>
+    </div>
+</div>
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/menu.js"></script>
+<script src="static/js/animate.js"></script>
+<script src="static/js/page.js"></script>
+<script src="static/js/script.js"></script>
+</body>
+</html>

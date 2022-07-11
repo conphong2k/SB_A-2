@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>11과 빨간색을 좋아할까요?</title>
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/animate.css">
+    <link rel="stylesheet" href="static/css/grid.css">
+    <link rel="stylesheet" href="static/css/font.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+<style>
+	table.type01
+	{
+		font-size:22px;
+		text-align:center;
+		vertical-align:middle;
+		border: 1px solid #C7529A;
+		margin:15px;
+	}
+	table.type01 td
+	{
+		font-size:22px;
+		text-align:left;
+		vertical-align:middle;
+		border: 1px solid #C7529A;
+		padding-left:10px;
+		width:400px;
+		height:50px;
+	}
+</style>
+<div id="wrap">
+    <div id="header">
+        <div id="menu">
+            <img src="static/icons/icon_hamburger.png" alt="">
+        </div>
+        <div class="step-wrap">
+            <div class="step">11과</div>
+        </div>
+        <div class="title-wrap">
+            <div class="title">빨간색을 좋아할까요?</div>
+        </div>
+        <div id="close">
+        </div>
+        <!-- navi -->
+        <div class="side-navi">
+            <a href="#" class="navi-home" onclick="oPage.moveIndex(1); return false;"></a>
+            <a href="#" class="navi-voca" onclick="oPage.moveIndex(2); return false;"></a>
+            <a href="#" class="navi-grammar" onclick="oPage.moveIndex(3); return false;"></a>
+            <a href="#" class="navi-grammar is-grammar-02" onclick="oPage.moveIndex(4); return false;"></a>
+            <a href="#" class="navi-speaking" onclick="oPage.moveIndex(5); return false;"></a>
+            <a href="#" class="navi-listening" onclick="oPage.moveIndex(7); return false;"></a>
+            <a href="#" class="navi-reading-talking" onclick="oPage.moveIndex(8); return false;"></a>
+            <img src="static/images/navi_7.png" alt="">
+        </div>
+        <!--// navi -->
+    </div>
+    <div id="main">
+        <input type="hidden" id="page-index" value="1">
+        <input type="hidden" id="slide-index" value="1">
+        <audio id="audio"></audio>
+
+        <!-- 표지 -->
+        <div class="page" data-page-index="1">
+            <div class="page-content" style = "height:700px">
+                <div class="text-center">
+                    <img src="static/images/11_1_title.jpg" alt="" style="width: 80%;"
+                         data-animage-grow-normal>
+                </div>
+                <div data-animate-slide="1" class="l-left-bottom" style="width: 100%;">
+                    <div class="info-message">
+                        <p>여러분은 언제 사람들을 집으로 초대해요?</p>
+                        <p>다른 사람 집에 갈 때 무슨 선물을 가져가요?</p>
+                    </div>
+				</div>
+            </div>
+        </div>
+        <!--// 표지 -->
+        <!-- 어휘 -->
+        <div class="page" data-page-index="2">
+            <div class="page-header is-voca">
+                <div class="page-title">색깔 / 무늬</div>
+            </div>
+			<div style="padding-bottom:10px">
+                <span style="display: block;margin-bottom: 10px;font-size:22px;font-weight: bold">1. 색깔</span>
+                <div class="row col-10" style="margin-left: 80px;">
+                    <div class="col-3 overlay-wrap" style="display: block; background-color: red; height: 180px; padding: 0">
+                        <div class="overlay">
+                            <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/11-V-01.mp3">
+                                <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                <div class="name"><span>빨간색</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 overlay-wrap" style="display: block; background-color: yellow; height: 180px; padding: 0">
+                        <div class="overlay">
+                            <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/11-V-02.mp3">
+                                <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                <div class="name"><span>노란색</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 overlay-wrap" style="display: block; background-color: blue; height: 180px; padding: 0">
+                        <div class="overlay">
+                            <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/11-V-03.mp3">
+                                <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                <div class="name"><span>파란색</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 overlay-wrap" style="display: block; background-color: black; height: 180px; padding: 0">
+                        <div class="overlay">
+                            <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/11-V-04.mp3">
+                                <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                <div class="name"><span>까만색</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-10" style="margin-left: 80px;">
+                    <div class="col-3 overlay-wrap" style="display: block; background-color: white; height: 180px; padding: 0">
+                        <div class="overlay">
+                            <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/11-V-05.mp3">
+                                <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                <div class="name"><span>하얀색</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 overlay-wrap" style="display: block; background-color: purple; height: 180px; padding: 0">
+                        <div class="overlay">
+                            <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/11-V-06.mp3">
+                                <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                <div class="name"><span>보라색</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 overlay-wrap" style="display: block; background-color: pink; height: 180px; padding: 0">
+                        <div class="overlay">
+                            <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/11-V-07.mp3">
+                                <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                <div class="name"><span>분홍색</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 overlay-wrap" style="display: block; background-color: green; height: 180px; padding: 0">
+                        <div class="overlay">
+                            <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/11-V-08.mp3">
+                                <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                <div class="name"><span>초록색</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-10" style="margin-left: 80px;">
+                    <div class="col-3 overlay-wrap" style="display: block; background-color: orange; height: 180px; padding: 0">
+                        <div class="overlay">
+                            <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/11-V-09.mp3">
+                                <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                <div class="name"><span>주황색</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 overlay-wrap" style="display: block; background-color: darkblue; height: 180px; padding: 0">
+                        <div class="overlay">
+                            <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/11-V-10.mp3">
+                                <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                <div class="name"><span>남색</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 overlay-wrap" style="display: block; background-color: brown; height: 180px; padding: 0">
+                        <div class="overlay">
+                            <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/11-V-11.mp3">
+                                <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                <div class="name"><span>갈색</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 overlay-wrap" style="display: block; background-color: gray; height: 180px; padding: 0">
+                        <div class="overlay">
+                            <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/11-V-12.mp3">
+                                <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                <div class="name"><span>회색</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+			</div>
+            <span style="display: block;margin-bottom: 10px;font-size:22px;font-weight: bold">2. 무늬</span>
+            <div class="page-content is-narrow">
+                <div class="row is-yellow">
+                    <div class="col-3">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/11_2_V_1_01.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/11-V-13.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>꽃무늬</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/11_2_V_1_02.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/11-V-14.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>줄무늬</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/11_2_V_1_03.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/11-V-15.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>물방울무늬</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner overlay-wrap">
+                            <img src="static/images/11_2_V_1_04.jpg" alt="">
+                            <div class="overlay">
+                                <div class="overlay-inner has-icon audio-button" data-audio-src="static/sounds/11-V-16.mp3">
+                                    <i class="icon fa fa-play-circle" aria-hidden="true"></i>
+                                    <div class="name"><span>체크무늬</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 어휘 -->
+        <!-- 문법1 -->
+        <div class="page" data-page-index="3">
+            <div class="page-header is-grammar">
+                <div class="page-title">A/V-(으)ᄅ까요?</div>
+            </div>
+            <div class="page-content">
+                <div class="row" style="position: absolute;width: 100%;top: 130px;">
+                    <div class="col-5 text-center">
+                        <img src="static/images/11_3_G_1_01.jpg" alt="" style="height: 340px" data-animage-grow-big>
+                    </div>
+                    <div class="col-7">
+                        <div class="text sound-toggle-wrap" data-animate-slide="1">
+                            가: 요코 씨가 이 옷을 <span class="text-red">좋아할까요</span>?<br>
+                            나: 네, 아마 좋아할 거예요.
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/11-G1-1.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <!--<div data-animate-slide="2" data-slide-sound-src="static/sounds/1-7.mp3"></div>-->
+                        <div class="text sound-toggle-wrap" data-animate-slide="2">
+                            가: 김 선생님이 전화를 <span class="text-red">받으실까요</span>?<br>
+                            나: 지금 수업 중이라서 안 받으실 거예요.
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/11-G1-2.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <!--<div data-animate-slide="4" data-slide-sound-src="static/sounds/1-7.mp3"></div>-->
+                        <div class="text" style="margin-top: 60px;padding-left: 30px;" data-animate-slide="3">
+                            - 내일도 날씨가 <span class="text-red">추울까요</span>?<br>
+                            - 이 식당 음식이 <span class="text-red">맛있을까요</span>?<br>
+                            - 오늘 손님이 몇 명쯤 <span class="text-red">오실까요</span>?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 문법1 -->
+        <!-- 문법2 -->
+        <div class="page" data-page-index="4">
+		<div class="page-header is-grammar">
+                <div class="page-title">ᄒ불규칙</div>
+            </div>
+            <div class="page-content">
+                <div class="row" style="position: absolute;width: 100%;top: 110px;">
+                    <div class="col-5 text-center">
+                        <img src="static/images/11_3_G_2_01.jpg" alt=""
+                             style="width: 340px;" data-animage-grow-big>
+                    </div>
+                    <div class="col-7">
+                        <div class="text sound-toggle-wrap" data-animate-slide="1">
+                            가: 제이미 씨는 무슨 색을 좋아해요?<br>
+                            나: 저는 <span class="text-red">노란색</span>을 제일 좋아해요.
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/11-G2-1.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="text sound-toggle-wrap" data-animate-slide="2">
+                            가: 요코 씨가 누구예요?<br>
+                            나: 저기 <span class="text-red">하얀색</span> 원피스를 입고 있는 사람이 요코 씨예요.
+                            <div class="sound-toggle-content">
+                                <i class="icon fa fa-play-circle icon-play audio-button" aria-hidden="true"
+                                   data-audio-src="static/sounds/11-G2-2.mp3"></i>
+                                <i class="icon fa fa-pause-circle icon-pause audio-pause-button" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="text" style="margin-top: 60px;padding-left: 30px;" data-animate-slide="3">
+                            - 이름은 <span class="text-red">까만색</span> 볼펜으로 써 주세요.<br>
+                            - 한국 사람은 머리 색깔이 <span class="text-red">까매요</span>.<br>
+                            - 로빈 씨는 <span class="text-red">어떤 영화</span>를 좋아해요?
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!--// 문법2 -->
+        <!-- 이야기해 봅시다 -->
+        <div class="page" data-page-index="5">
+            <div class="page-header is-speaking-practice"></div>
+            <div class="page-content">
+                <div class="row" style="position: absolute;width: 100%;">
+                    <div class="col-6 text-center">
+                        <img src="static/images/11_4_D_1_01_01.jpg" alt="" style="width: 230px;"
+                             data-animage-diminish-normal>
+                        <div style="display: inline-block;" data-animate-slide="1">
+                            <img src="static/images/11_4_D_1_01_02.jpg" alt="" style="width: 230px;"
+                                 data-animage-diminish-normal>
+                        </div>
+                        <div style="display: inline-block;" data-animate-slide="2">
+                            <img src="static/images/11_4_D_1_01_03.jpg" alt="" style="width: 230px;"
+                                 data-animage-diminish-normal>
+                        </div>
+                        <div style="display: inline-block;" data-animate-slide="3">
+                            <img src="static/images/11_4_D_1_01_04.jpg" alt="" style="width: 230px;"
+                                 data-animage-diminish-normal>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="article-wrap" data-animate-slide="4" style="height: 370px;margin: 9px 0;">
+                            <p class="article-text">
+                                로 빈: 요코 씨, 제이미 씨 집들이 선물은 준비했어요?<br>
+                                요 코: 아니요. 시간이 없어서 아직 준비 못했어요.<br>
+                                로 빈: 저는 오늘 사러 가려고 하는데 같이 갈까요?<br>
+                                요 코: 좋아요. 그런데 무슨 선물이 좋을까요? 집들이에 가는 게 처음이라서 무슨 선물이 좋을지 모르겠어요.<br>
+                                로 빈: 음,그럼 저하고 같이 커피잔 세트를 사는게 어때요? 학교 앞 가게에서 예쁜 빨간색 커피 잔을 봤어요.<br>
+                                요 코: 커피 잔 세트요? 아, 제이미 씨는 커피를 좋아하지요?<br>
+                                로 빈: 네, 전에 집에서도 자주 커피를 마신다고 했어요. 아마 좋아할 거예요.<br>
+                                요 코: 좋아요. 그럼 케이크도 같이 사요.
+                            </p>
+                            <div class="audio-wrap">
+                                <audio src="static/sounds/11-D-1.mp3" controls></audio>
+                            </div>
+                            <div class="article-toggle-wrap">
+                                <a href="#" class="article-toggle-item is-show">
+                                    <img src="static/icons/icon_show_text.png" alt="">
+                                    <span>지문보기</span>
+                                </a>
+                                <a href="#" class="article-toggle-item is-hide">
+                                    <img src="static/icons/icon_hide_text.png" alt="">
+                                    <span>감추기</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 이야기해 봅시다 -->
+        <!-- 이야기해 봅시다2 -->
+        <div class="page" data-page-index="6">
+            <div class="page-header is-speaking-practice"></div>
+            <div class="page-content">
+                <div class="row is-yellow">
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="1">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        요코 씨, <br>제이미 씨/집들이 <br>선물/준비하다?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="3">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        저/오늘/사러 가다/ <br>같이/가다?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="5">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        같이/커피 잔 <br>세트/사다? <br>학교 앞 가게/ <br>빨간색 커피 잔/ <br>보다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="7">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        네/ <br>집/자주/마시다 <br>좋아하다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row is-green">
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="2">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        아니요 <br>시간이 없다/준비 <br>못하다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="4">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        좋다/<br>
+                                        무슨 선물/좋다? <br>집들이/가다/처음/ <br>잘 모르다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="6">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        커피 잔 세트? <br>제이미 씨/ <br>커피/좋아하다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item-inner" data-animate-slide="8">
+                            <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                    <p style="font-size: 25px;">
+                                        좋다 <br>케이크/사다
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 20px;border-top: 1px solid #9fa0a0;" data-animate-slide="9">
+                    <div class="row is-blue" style="margin-top: 20px;">
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="10">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            요코 씨, <br>제이미 씨/집들이 <br>선물/준비하다?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="12">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            저/지금/사러 가다/ <br>같이/가다?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="14">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            저/과일 <br>과일/같이 먹을 수 <br>있다/좋다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="16">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            제이미 씨/ <br>요리하는 것/ <br>좋아하다 <br>좋아하다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row is-purple">
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="11">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            아니요 <br>시간이 없다/준비 <br>못하다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="13">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            좋다/ <br>무슨 선물? <br>제이미 씨/ <br>뭘/좋아하다/잘
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="15">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            그럼/요리책/ <br>어떻다?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item-inner" data-animate-slide="17">
+                                <div style="display: table;width: 100%;height: 130px; text-align: center;table-layout: fixed;">
+                                    <div style="display: table-cell;width: 100%;vertical-align: middle;">
+                                        <p style="font-size: 25px;">
+                                            좋다 <br>빨리/사러 가다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 이야기해 봅시다2 -->
+        <!-- 들어 보세요 -->
+        <div class="page" data-page-index="7">
+            <div class="page-header is-listening-practice"></div>
+            <div class="page-content is-narrow">
+                <div style="margin: 20px 30px">
+                <span style="font-size: 25px;">1. 다음 대화를 잘 듣고 질문에 답하세요.</span>
+                    <p style="font-size: 22px;margin-top: 20px;">1) 맞으면 O, 틀리면 X 하세요.</p>
+                    <p style="margin: 1em 0 0 1em; font-size: 19px; line-height: 30px;">
+                        ① 두 사람은 제이미 씨의 집들이 선물을 사러 갔습니다. ( )<br>
+                        ② 제이미 씨는 물방울 무늬를 좋아합니다. ( )<br>
+                        ③ 요즘 빨간색 커피 잔이 인기가 많습니다. ( )<br>
+                        ④ 가게에는 두 사람의 마음에 드는 커피 잔이 없었습니다. ( )
+                    </p>
+
+                    <div style="margin-top: 30px;">
+                        <span style="display: block;margin-top: 15px;font-size: 22px;">2) 다음 중 두 사람이 산 커피 잔을 고르세요.</span>
+                        <div style="text-align: center;">
+                            <div class="row" style="max-width:90%;margin-top:20px;">
+
+                                <div class="col-3">
+                                    <p style="font-size: 20px;">①</p>
+                                    <div style="padding-right:10px; padding-left:10px">
+                                        <img src="static/images/11_5_L_1_01.jpg" alt="" data-animage-grow-big>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <p style="font-size: 20px;">②</p>
+                                    <div style="padding-right:10px; padding-left:10px">
+                                        <img src="static/images/11_5_L_1_02.jpg" alt="" data-animage-grow-big>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <p style="font-size: 20px;">③</p>
+                                    <div style="padding-right:10px; padding-left:10px">
+                                        <img src="static/images/11_5_L_1_03.jpg" alt="" data-animage-grow-big>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <p style="font-size: 20px;">④</p>
+                                    <div style="padding-right:10px; padding-left:10px">
+                                        <img src="static/images/11_5_L_1_04.jpg" alt="" data-animage-grow-big>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 80px;text-align: center">
+                        <audio src="static/sounds/11-L-01.mp3" controls></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 들어 보세요 -->
+        <!-- 읽고 써 보세요 -->
+        <div class="page" data-page-index="8">
+            <div class="page-header is-reading-talking"></div>
+            <div class="page-content is-narrow">
+                <span style="font-size: 22px;">1. 다음을 읽고 물음에 답하시오</span>
+                <div class="box" style="margin-top: 30px;">
+					<div style="margin : 0px;font-size:22px;">
+                        가연 씨는 제가 한국에 와서 처음 만난 한국 친구입니다. 가연 씨는 저의 한국어 공부도 도와주고 서울의 재미있는 곳도 많이 소개해준 아주 고마 운 친구입니다.<br>
+                        &nbsp;지난주에 가연 씨가 저를 생일 파티에 초대하고 싶다고 말했을 때 아주 기뻤습니다.
+                        저는 가연 씨의 생일에 아주 특별한 선물을 해 주고 싶습니 다.
+                        그런데 가연 씨의 생일 선물을 사러 백화점에도 가 보고 시장에도 가 봤지만 마음에 드는 선물이 없었습니다.<br>
+                        &nbsp;저는 평소에 팔찌나 목걸이 만드는 것을 좋아합니다. 그래서 가연 씨의 이번 생일에도 제가 만든 팔찌를 선물해 주려고 합니다.
+                        어제는 동대문 시 장에 가서 팔찌를 만들 재료도 사 왔습니다. 팔찌를 다 만들고 나서 제가 만든 노란색 상자에 포장도 할 생각입니다.
+                        가연 씨가 선물을 받고 좋아할 까요? 많이 좋아했으면 좋겠습니다.
+                    </div>
+                </div>
+                <div class="" data-animate-slide="1">
+					<p style="font-size: 22px;margin-top: 20px;">1) 이 사람은 가연 씨의 생일 선물로 준비한 것은 뭐예요? </p>
+                    <div style="text-align: center;">
+                        <div class="row" style="max-width:90%;margin-top:20px;">
+
+                            <div class="col-3">
+                                <p style="font-size: 20px;">①</p>
+                                <div style="padding-right:10px; padding-left:10px">
+                                    <img src="static/images/11_6_RD_1_01.jpg" alt="" style="margin-top: 2.1em" data-animage-grow-big>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <p style="font-size: 20px;">②</p>
+                                <div style="padding-right:10px; padding-left:10px">
+                                    <img src="static/images/11_6_RD_1_02.jpg" alt="" data-animage-grow-big>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <p style="font-size: 20px;">③</p>
+                                <div style="padding-right:10px; padding-left:10px">
+                                    <img src="static/images/11_6_RD_1_03.jpg" alt="" data-animage-grow-big>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <p style="font-size: 20px;">④</p>
+                                <div style="padding-right:10px; padding-left:10px">
+                                    <img src="static/images/11_6_RD_1_04.jpg" alt="" data-animage-grow-big>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="" data-animate-slide="2">
+                    <div style="margin-top: 30px;">
+						<p style="font-size: 22px;margin-top: 20px;">2) 맞는 것을 고르세요.</p>
+						<div class="row" style="margin-top: 30px; margin-left: 3%">
+							<div class="font-20">
+                                    ① 이 사람은 가연 씨와 한국어를 공부했습니다. <br>
+                                    ② 이 사람은 가연 씨에게 생일 선물을 줬습니다. <br>
+                                    ③ 이 사람은 가연 씨를 생일파티에 초대했습니다. <br>
+                                    ④ 이 사람은 동대문 시장에 가서 생일 선물을 샀습니다.
+							</div>
+						</div>
+                    </div>
+                </div>
+
+                <div class="" style ="margin-top:50px;" data-animate-slide="3">
+					<span style="font-size: 25px;"> 2. 한국에서 다른 사람에게 선물을 한 일이 있습니까? 언제, 무슨 선물을 했습니까? 왜 그 물건을 선물했습니까? </span>
+                </div>
+            </div>
+        </div>
+        <!--// 읽고 써 보세요 -->
+    </div>
+    <div id="footer">
+        <div id="prev" style="display: none;">
+            <img src="static/icons/icon_prev.png">
+        </div>
+        <div id="next">
+            <img src="static/icons/icon_next.png">
+        </div>
+        <div class="book-name"><b>한국어교재1</b> Student's book A</div>
+        <div class="book-name-right"><b>11과 빨간색을 좋아할까요?</b></div>
+    </div>
+</div>
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/menu.js"></script>
+<script src="static/js/animate.js"></script>
+<script src="static/js/page.js"></script>
+<script src="static/js/script.js"></script>
+</body>
+</html>

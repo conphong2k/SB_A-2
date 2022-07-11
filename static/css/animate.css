@@ -1,0 +1,75 @@
+/* =========================================
+ * Grow
+ * ----------------------------------------- */
+[data-animage-grow-big]:hover {
+    cursor: pointer;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -ms-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+[data-animage-grow-normal]:hover {
+    cursor: pointer;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -ms-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+[data-animage-diminish-normal]:hover {
+    cursor: pointer;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -ms-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transform: scale(.95);
+    -moz-transform: scale(.95);
+    -ms-transform: scale(.95);
+    -o-transform: scale(.95);
+    transform: scale(.95);
+}
+
+/* =========================================
+ * Slide
+ * ----------------------------------------- */
+[data-animate-slide] {
+    opacity: 0;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -ms-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transform: translatey(10px);
+    -moz-transform: translatey(10px);
+    -ms-transform: translatey(10px);
+    -o-transform: translatey(10px);
+    transform: translatey(10px);
+}
+
+.is-slide-after[data-animate-slide] {
+    opacity: 1;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -ms-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transform: translatey(0);
+    -moz-transform: translatey(0);
+    -ms-transform: translatey(0);
+    -o-transform: translatey(0);
+    transform: translatey(0);
+}
